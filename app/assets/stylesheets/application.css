@@ -11,3 +11,39 @@
  *= require_self
  *= require_tree .
  */
+body {
+   	padding: 0;
+	margin: 0;
+	background: url(/images/main-background.jpg) repeat center top;
+	width: 100%;
+	display: table;
+	overflow-x: hidden;
+  	font-family: Verdana, Helvetica, Arial;
+  	font-size: 14px;
+}
+a:link, a:active, a:visited {
+   color: #CD0000;
+}
+input { 
+   margin-bottom: 5px;
+}
+p { 
+   line-height: 150%;
+}
+div#container {
+   	width: 75%;
+	margin: 0 auto;
+	background-color: #FFF;
+	padding: 20px 40px;
+	border: solid 1px black;
+	margin-top: 12px;
+}
+div#header {
+   text-align: center;
+   padding-bottom: 15px;
+}
+div#content {
+   float: left;
+   width: 450px;
+   padding: 10px;
+}
