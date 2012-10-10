@@ -1,5 +1,11 @@
 Babydollhair::Application.routes.draw do
   resources :posts
+  get "bridal", :to => "static#bridal", :as => :bridal
+  get "portfolio", :to => "static#portfolio", :as => :portfolio
+  get "about", :to => "static#about", :as => :about
+  get "contact", :to => "static#contact", :as => :contact
+  
+  root :to => 'home#index'
 
   get "home/index"
 
