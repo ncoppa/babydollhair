@@ -14,7 +14,7 @@
 body {
    	padding: 0;
 	margin: 0;
-	background: url(/images/main-background.jpg) repeat center top;
+	background: url("main-background.jpg") repeat center top;
 	width: 100%;
 	display: table;
 	overflow-x: hidden;
