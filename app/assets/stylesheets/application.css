@@ -39,6 +39,16 @@ div#container {
 	border: solid 1px black;
 	margin-top: 12px;
 }
+
+div#IndexWrapperContent{
+	width:65%;
+	float:left;	
+}
+
+div#IndexWrapperImages{
+	width:35%;
+	float:right;	
+}
 div#header {
    text-align: center;
    padding-bottom: 15px;
@@ -47,4 +57,19 @@ div#content {
    float: left;
    width: 450px;
    padding: 10px;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  margin: 10px 50px 10px 50px;
+	padding: 10px 50px 10px 50px;
+  font-size: 12px;
+  border: solid 1px #450A05;
+}
+
+#flash_notice {
+  background-color: #FCC;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
 }

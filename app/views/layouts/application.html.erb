@@ -9,8 +9,14 @@
 <body>
   <div id="container">
 	<%= render :partial => 'layouts/topnav' %>
+  	<%= content_tag :h1, yield(:title) if show_title? %>
+	<% flash.each do |name, msg| %>
+		<div id="flash"><%= content_tag :div, msg, :id => "flash_#{name}" %></div>
+	<% end %>
+      <%= yield %>
 
-<%= yield %>
 </div>
+
+
 </body>
 </html>
