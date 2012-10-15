@@ -1,6 +1,5 @@
-<%= link_to_unless_current "Home", root_path %> |
-<%= link_to_unless_current "Services", services_path %> |
-<%= link_to_unless_current "Bridal", bridal_path %> |
-<%= link_to_unless_current "Portfolio", portfolio_path %> |
-<%= link_to_unless_current "About", about_path %> |
-<%= link_to_unless_current "Contact", contact_path %>
+<%= link_to "Home", root_path %>
+<% @nav_links.each do |nav| %>
+ | <%= link_to nav.title, root_path(:id => nav.id) %>
+	
+<% end %>

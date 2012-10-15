@@ -1,4 +1,6 @@
 Babydollhair::Application.routes.draw do
+  resources :contents
+
   resources :posts
   
   get "services", :to => "static#services", :as => :services
