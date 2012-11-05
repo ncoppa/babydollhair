@@ -1,5 +1,7 @@
 <%= link_to "Home", root_path %>
 <% @nav_links.each do |nav| %>
  | <%= link_to nav.title, root_path(:id => nav.id) %>
+
+<%= link_to "Services", root_path %>
 	
 <% end %>

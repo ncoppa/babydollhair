@@ -3,11 +3,6 @@ Babydollhair::Application.routes.draw do
 
   resources :posts
   
-  get "services", :to => "static#services", :as => :services
-  get "bridal", :to => "static#bridal", :as => :bridal
-  get "portfolio", :to => "static#portfolio", :as => :portfolio
-  get "about", :to => "static#about", :as => :about
-  get "contact", :to => "static#contact", :as => :contact
   
   root :to => 'static#index'
 
@@ -61,7 +56,7 @@ Babydollhair::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'home#index'
+   
 
   # See how all your routes lay out with "rake routes"
 
